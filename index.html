@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Eventos</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- js -->
+    <script src="assets/js/viewEvent.js" defer></script>
+    <script src="assets/js/setDb.js" type="module" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <h1>Criar Eventos</h1>
+    </header>
+    <main>
+        <article class="create-event">
+            <h2>Criar um evento</h2>
+            <form action="">
+                <div class="input-box">
+                    <label for="">Nome:</label>
+                    <input required class="inputEvent" id="nomeEvento" type="text" placeholder="Nome do evento">
+                </div>
+                <div class="input-box">
+                    <label for="">Data:</label>
+                    <input required class="inputEvent" id="dataEvento" type="data" placeholder="Ex: 22/10/2022 - 20h">
+                </div>
+                <div class="input-box">
+                    <label for="">Local:</label>
+                    <input maxlength="40" required class="inputEvent" id="localEvento" type="text" placeholder="Local do seu evento">
+                </div>
+                <div class="imageEvent-box">
+                    <label for="imageEvent">Escolher capa de evento<span class="material-symbols-outlined">photo_library</span></label>
+                    <input required class="inputEvent" id="imageEvent" type="file">
+                </div>
+                <div class="textarea-box">
+                    <label for="">Descrição:</label>
+                    <textarea required spellcheck="false" name="" id="descriptionEvento" placeholder="Descreva seu evento" cols="30" rows="10"></textarea>
+                </div>
+                <button id="saveEvent" type="submit">Adicionar evento</button>
+            </form>
+        </article>
+        
+        <article class="preview">
+            <h2>Pré-Visualização</h2>
+            <div class="preview-event">
+                <div class="img-event"><img src="" alt="imagem do evento"></div>
+                <div class="date-event">
+                     
+                    </div>
+                </div>
+                <div class="preview-buttons">
+                    <a type="button" href="allEvents.html" class="preview-btn_viewAll">Gerenciar eventos</a>
+                    <a href="" type="button" class="preview-btn_viewSite"> Ver no site <span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
