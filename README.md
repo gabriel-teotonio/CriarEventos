@@ -27,7 +27,7 @@ http://criar-eventos.vercel.app/
 
 ## Screenshots
 
-jjjj
+<img width="600" alt="events-image" src="https://user-images.githubusercontent.com/99752042/185934437-8609a179-aa32-4f79-842b-88e6a0338cc3.png">
 
 
 ## Aprendizados
